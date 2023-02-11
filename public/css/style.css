@@ -305,3 +305,7 @@ ion-icon {
   color: black;
 }
 
+
+.post .fundo .acoes div:first-child .vermelho{
+  color: red;
+}
