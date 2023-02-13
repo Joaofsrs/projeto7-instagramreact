@@ -2,10 +2,10 @@ import Story from './Story'
 
 export default function Stories() {
     return (
-        <div class="stories">
-            {storyObjeto.map((elemento) => <Story img={elemento.img} usuario={elemento.usuario} />)}            
+        <div className="stories">
+            {storyObjeto.map((elemento, index) => <Story key={index} img={elemento.img} usuario={elemento.usuario} />)}            
 
-            <div class="setinha">
+            <div className="setinha">
                 <ion-icon name="chevron-forward-circle"></ion-icon>
             </div>
         </div>

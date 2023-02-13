@@ -2,8 +2,8 @@ import Post from "./Post";
 
 export default function Posts(){
     return (
-        <div class="posts">
-            {postObjeto.map((elemento) => <Post post={elemento} /> )}
+        <div className="posts">
+            {postObjeto.map((elemento, index) => <Post key={index} post={elemento} /> )}
         </div>
     );
 }
